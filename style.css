@@ -1,0 +1,72 @@
+h1 {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.calculator {
+    padding: 5px;
+    background-color: #58a4fc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #ccc;
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+}
+ 
+.calculator input[type="text"] {
+  grid-column: 1 / span 5;
+  height: 50px;
+  font-size: 24px;
+  text-align: right;
+  padding: 5px;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 5px #ccc;
+}
+ 
+.calculator button {
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #ccc;
+}
+ 
+.calculator button:active {
+  background-color: #f2f2f2;
+  box-shadow: inset 2px 2px 5px #ccc;
+}
+
+.campoDePrimo{
+  flex: 1;
+}
+
+.campoDoInput{
+  flex: 3;
+}
+
+.campoDoInput input{
+  width: 100%;
+}
+
+.divDeResultado{
+  display: flex;
+  flex: 1;
+}
+
+.divDosBotoes{
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 5px;
+}
+
+.divDosBotoes button{      
+  background-color: aquamarine;
+}
+ 

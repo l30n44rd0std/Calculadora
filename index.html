@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <h1>Calculadora do Leonardo e Clícia</h1>
+
+    <div class="calculator">
+      <div class="divDeResultado">
+
+        <span class="campoDePrimo">
+        
+          <div><span>Primo:</span> <span id="resultPrimo"></span></div>
+          <div> <span>Par:</span><span id="resultPar"></span></div>
+          <div><span>Impar: </span><span id="resultImpar"></span></div>
+        </span>
+        <span class="campoDoInput">
+        <input onchange="checkNumero()" class="testeResult" type="text" id="result" >
+        </span>
+        
+      </div>
+      <div class="divDosBotoes">
+
+        
+        <button onclick="clearResult()">C</button>
+        <button onclick="backspace()">←</button>
+        <button onclick="getResult('!')">!</button>
+        <button onclick="getResult('sqrt')">√</button>
+        <button onclick="getResult('^')">^</button>
+        <button onclick="getResult('/')">÷</button>
+        <button onclick="getResult('*')">x</button>
+        <button onclick="getResult('-')">-</button>
+        <button onclick="getResult('+')">+</button>
+        <button onclick="getResult('1')">1</button>
+        <button onclick="getResult('2')">2</button>
+        <button onclick="getResult('3')">3</button>
+        <button onclick="getResult('4')">4</button>
+        <button onclick="getResult('5')">5</button>
+        <button onclick="getResult('6')">6</button>
+        <button onclick="getResult('7')">7</button>
+        <button onclick="getResult('8')">8</button>
+        <button onclick="getResult('9')">9</button>
+        <button onclick="getResult('0')">0</button>
+        <button onclick="getResult('.')">.</button>
+        <button onclick="getResult('(')">(</button>
+        <button onclick="getResult(')')">)</button>      
+        <button onclick="calculateResult()">=</button>
+      </div>
+      </div>
+      
+      <script src="./script.js"></script>
+    </body>
+    </html>
